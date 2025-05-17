@@ -5,7 +5,7 @@ Jogo Tetris em Python com interface em terminal usando Curses e NumPy. Em refato
 > 🚧 **Este projeto está em processo de refatoração para se tornar um app modular com interface gráfica em `pygame`.**  
 > O código atual representa a **versão funcional em terminal**, feita como desafio técnico durante processo simulado da Blizzard Entertainment.
 
----
+
 
 📜 Descrição
 
@@ -56,7 +56,7 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
    ```bash
    git clone https://github.com/seu-usuario/tetris-terminal.git
    cd tetris-terminal
-````
+``
 
 2. (Recomendado) Crie um ambiente virtual:
 
