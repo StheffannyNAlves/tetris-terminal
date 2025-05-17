@@ -156,7 +156,7 @@ Stheffanny Nascimento Alves
 
 Projeto sob a licença MIT.
 
-    Sinta-se livre pra usar, modificar e compartilhar — só não leva o crédito pela bomba se não foi você que explodiu o tabuleiro 😎💣
+    Sinta-se livre pra usar, modificar e compartilhar😎💣
 
 ---
 
