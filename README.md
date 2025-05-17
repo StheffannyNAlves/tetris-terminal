@@ -114,10 +114,9 @@ Esse Tetris foi desenvolvido com foco em:
 
 ---
 
- 🧠 Professor: Notou um "glitch" nas cores?
-
-Identificado: após fixação das peças, `curses.color_pair()` tentava renderizar valores inválidos.
-**Corrigido na versão modular em andamento.**
+🧠 Bug visível: Após fixar as peças, alguns blocos exibiam “glitch” de cor no terminal.  
+🔍 Causa: `curses.color_pair()` recebia valores que já haviam sido apagados (0 ou inválidos).  
+🛠️ Status: Corrigido na versão modular em desenvolvimento.
 
 ---
 
