@@ -3,7 +3,7 @@ Jogo Tetris em Python com interface em terminal usando Curses e NumPy. Em refato
 🎮 Tetris Terminal (versão curses) – Stheffanny N. Alves
 
 > 🚧 **Este projeto está em processo de refatoração para se tornar um app modular com interface gráfica em `pygame`.**  
-> O código atual representa a **versão funcional em terminal**, feita como desafio técnico durante processo simulado da Blizzard Entertainment.
+> O código atual representa a **versão funcional em terminal**, feita como desafio técnico durante a disciplina MI-Algoritmos, por meio do PBL(
 
 
 
