@@ -1,14 +1,13 @@
 # tetris-terminal
 Jogo Tetris em Python com interface em terminal usando Curses e NumPy. Em refatoração para PyGame.
-````markdown
-# 🎮 Tetris Terminal (versão curses) – Stheffanny N. Alves
+🎮 Tetris Terminal (versão curses) – Stheffanny N. Alves
 
 > 🚧 **Este projeto está em processo de refatoração para se tornar um app modular com interface gráfica em `pygame`.**  
 > O código atual representa a **versão funcional em terminal**, feita como desafio técnico durante processo simulado da Blizzard Entertainment.
 
 ---
 
-## 📜 Descrição
+📜 Descrição
 
 Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **NumPy** e **Curses** para rodar inteiramente no terminal. O projeto foca em:
 
@@ -20,7 +19,7 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 
 ---
 
-## 🧠 Tecnologias utilizadas
+🧠 Tecnologias utilizadas
 
 - Python 3.10+  
 - NumPy  
@@ -29,7 +28,7 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 
 ---
 
-## 🕹️ Controles
+🕹️ Controles
 
 | Tecla      | Ação                            |
 |------------|--------------------------------|
@@ -42,7 +41,7 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 
 ---
 
-## 💣 Peça Bomba
+💣 Peça Bomba
 
 - Representada como peça `B`  
 - Ao colidir, explode uma área 3x3 ao redor  
@@ -51,7 +50,7 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 
 ---
 
-## 🚀 Como rodar
+🚀 Como rodar
 
 1. Clone o repositório:  
    ```bash
@@ -71,7 +70,6 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
    ```bash
    pip install -r requirements.txt
    ```
-
 4. Rode o jogo:
 
    ```bash
@@ -82,7 +80,7 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 
 ---
 
-## 🛠️ Em desenvolvimento
+ 🛠️ Em desenvolvimento
 
 * [x] Versão funcional em curses
 * [ ] Refatoração completa em arquitetura modular
@@ -92,20 +90,20 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 
 ---
 
-## 🧠 Professor: Notou um "glitch" nas cores?
+ 🧠 Professor: Notou um "glitch" nas cores?
 
 Identificado: após fixação das peças, `curses.color_pair()` tentava renderizar valores inválidos.
 **Corrigido na versão modular em andamento.**
 
 ---
 
-## 📸 Screenshot
+ 📸 Screenshot
 
-> *(Adicione aqui um print ou gif do jogo rodando no terminal)*
+> *
 
 ---
 
-## 🧑‍💻 Autora
+ 🧑‍💻 Autora
 
 **Stheffanny N. Alves**
 Estudante de Engenharia de Computação – UEFS
@@ -113,13 +111,13 @@ Estudante de Engenharia de Computação – UEFS
 
 ---
 
-## 📄 Licença
+📄 Licença
 
 MIT License
 
 ---
 
-### ⚠️ Aviso Final
+⚠️ Aviso Final
 
 Esse repositório representa **uma fase inicial** de um projeto maior. Se você quer ver a evolução para interface gráfica e modularização avançada, **acompanhe a branch `dev`** ou aguarde novas atualizações.
 
