@@ -123,7 +123,7 @@ Identificado: após fixação das peças, `curses.color_pair()` tentava renderiz
 
 📸 Screenshot
 
-![Tetris Gameplay](tetris-terminal/tetris.gif)
+![Tetris Gameplay](./tetris.gif)
 
 
 > *
