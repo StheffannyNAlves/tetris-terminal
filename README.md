@@ -1,21 +1,37 @@
-# tetris-terminal
+# 🧱 TETRIS TERMINAL — Powered by Python + Curses
 Jogo Tetris em Python com interface em terminal usando Curses e NumPy. Em refatoração para PyGame.
 🎮 Tetris Terminal (versão curses) – Stheffanny N. Alves
 
 > 🚧 **Este projeto está em processo de refatoração para se tornar um app modular com interface gráfica em `pygame`.**  
-> O código atual representa a **versão funcional em terminal**, feita como desafio técnico durante a disciplina MI-Algoritmos, por meio do PBL(Problem-Based Learning ou Aprendizagem Baseada em Problemas).
+> O código atual representa a **versão funcional em terminal**, feita como projeto acadêmico na disciplina MI-Algoritmos, por meio da Metodologia PBL(Problem-Based Learning ou Aprendizagem Baseada em Problemas).
 
 
 
-📜 Descrição
+🧩 Sobre o Projeto
 
-Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **NumPy** e **Curses** para rodar inteiramente no terminal. O projeto foca em:
+Esse Tetris foi desenvolvido com foco em:
 
-- Representação matricial das peças  
-- Sistema de rotação avançado (SRS + Wall Kicks)  
-- Interface textual responsiva  
-- Sistema de pontuação com combos  
-- Inclusão de uma peça especial: **Bomba**, que explode áreas do tabuleiro  
+    Jogabilidade fluida com Super Rotation System (SRS) e wall kicks
+
+    Peça bomba 💣 que explode áreas inteiras do tabuleiro
+
+    Sistema de combos, níveis dinâmicos e pontuação estratégica
+
+    Totalmente jogável via interface textual (modo terminal) usando a biblioteca curses
+
+🚀 Funcionalidades
+
+✅ 7 peças clássicas do Tetris
+✅ Peça especial Bomba com explosão em área
+✅ Detecção de colisão e remoção de linhas
+✅ Sistema de combo com tempo limite
+✅ Progressão de dificuldade com aumento de velocidade
+✅ Menu inicial, opções de dificuldade e mapeamento de controles
+✅ Pontuação por tipo de peça, combo e nível
+✅ Configuração por menu (WASD ou Setas)
+
+
+
 
 ---
 
@@ -27,17 +43,25 @@ Esta é uma implementação do clássico **Tetris**, utilizando **Python**, **Nu
 - [Planejado] PyGame (GUI futura)  
 
 ---
+🧪 Requisitos
+
+- Python 3.10+
+- Sistema compatível com `curses`
+  - ✅ Linux/macOS: roda nativamente
+  - ⚠️ Windows: usar [Windows Terminal](https://aka.ms/terminal) + [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+
 
 🕹️ Controles
 
-| Tecla      | Ação                            |
-|------------|--------------------------------|
-| `W` / ↑    | Rotacionar peça (anti-horário) |
-| `A` / ←    | Mover para esquerda             |
-| `D` / →    | Mover para direita              |
-| `S` / ↓    | Mover para baixo (queda suave) |
-| `P`        | Pausar / Retomar jogo           |
-| `Q`        | Sair                           |
+| Ação             | Tecla WASD | Tecla Setas |
+| ---------------- | ---------- | ----------- |
+| Mover Esquerda   | `A`        | `←`         |
+| Mover Direita    | `D`        | `→`         |
+| Mover Para Baixo | `S`        | `↓`         |
+| Rotacionar Peça  | `W`        | `↑`         |
+| Pausar/Reiniciar | `P`        | `P`         |
+| Sair             | `Q`        | `Q`         |
+
 
 ---
 
@@ -100,20 +124,39 @@ Identificado: após fixação das peças, `curses.color_pair()` tentava renderiz
  📸 Screenshot
 
 > *
+---
+
+🔮 Futuras Expansões
+
+Adicionar efeitos sonoros (playsound ou pygame.mixer)
+
+Porta gráfica com pygame
+
+Ranking local/salvamento de pontuação
+
+Modo multiplayer local
+
+Versão para web com WebAssembly ou Flask
 
 ---
 
  🧑‍💻 Autora
 
 **Stheffanny N. Alves**
-Estudante de Engenharia de Computação – UEFS
-[stheffannyalvesnascimento@gmail.com](mailto:stheffannyalvesnascimento@gmail.com)
+Stheffanny Nascimento Alves
+🎓 Estudante de Engenharia de Computação — UEFS
+🔐 Foco em Cibersegurança, Programação e Engenharia de Software
+🖤 Apaixonada por tecnologia e desenvolvimento de jogos
+📫 stheffannyalvesnascimento@gmail.com
+🔗 GitHub
 
 ---
 
 📄 Licença
 
-MIT License
+Projeto sob a licença MIT.
+
+    Sinta-se livre pra usar, modificar e compartilhar — só não leva o crédito pela bomba se não foi você que explodiu o tabuleiro 😎💣
 
 ---
 
