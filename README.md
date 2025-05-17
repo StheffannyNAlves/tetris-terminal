@@ -21,14 +21,14 @@ Esse Tetris foi desenvolvido com foco em:
 
 🚀 Funcionalidades
 
-✅ 7 peças clássicas do Tetris
-✅ Peça especial Bomba com explosão em área
-✅ Detecção de colisão e remoção de linhas
-✅ Sistema de combo com tempo limite
-✅ Progressão de dificuldade com aumento de velocidade
-✅ Menu inicial, opções de dificuldade e mapeamento de controles
-✅ Pontuação por tipo de peça, combo e nível
-✅ Configuração por menu (WASD ou Setas)
+- ✅ 7 peças clássicas do Tetris
+- ✅ Peça especial Bomba com explosão em área
+- ✅ Detecção de colisão e remoção de linhas
+- ✅ Sistema de combo com tempo limite
+- ✅ Progressão de dificuldade com aumento de velocidade
+- ✅ Menu inicial, opções de dificuldade e mapeamento de controles
+- ✅ Pontuação por tipo de peça, combo e nível
+- ✅ Configuração por menu (WASD ou Setas)
 
 
 
@@ -121,25 +121,24 @@ Identificado: após fixação das peças, `curses.color_pair()` tentava renderiz
 
 ---
 
-📸 Screenshot
+📸 GIF
 
 ![Tetris Gameplay](./tetris.gif)
 
 
-> *
 ---
 
 🔮 Futuras Expansões
 
-Adicionar efeitos sonoros (playsound ou pygame.mixer)
+- Adicionar efeitos sonoros (playsound ou pygame.mixer)
 
-Porta gráfica com pygame
+- Porta gráfica com pygame
 
-Ranking local/salvamento de pontuação
+- Ranking local/salvamento de pontuação
 
-Modo multiplayer local
+- Modo multiplayer local
 
-Versão para web com WebAssembly ou Flask
+- Versão para web com WebAssembly ou Flask
 
 ---
 
