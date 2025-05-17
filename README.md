@@ -97,7 +97,7 @@ Esse Tetris foi desenvolvido com foco em:
 4. Rode o jogo:
 
    ```bash
-   python3 main.py
+   python3 tetris.py
    ```
 
 ⚠️ No Ubuntu, certifique-se que o terminal suporta `curses`. O jogo roda diretamente no terminal.
