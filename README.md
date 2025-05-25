@@ -163,11 +163,11 @@ A versão atual está sendo refatorada com total liberdade arquitetural, prioriz
 
 **Stheffanny N. Alves**
 Stheffanny Nascimento Alves
-🎓 Estudante de Engenharia de Computação — UEFS
-🔐 Foco em Cibersegurança, Programação e Engenharia de Software
-🖤 Apaixonada por tecnologia e desenvolvimento de jogos
-📫 stheffannyalvesnascimento@gmail.com
-🔗 GitHub
+   🎓 Estudante de Engenharia de Computação — UEFS
+   🔐 Foco em Cibersegurança, Programação e Engenharia de Software
+  🖤 Apaixonada por tecnologia e desenvolvimento de jogos
+  📫 stheffannyalvesnascimento@gmail.com
+  🔗 GitHub
 
 ---
 
