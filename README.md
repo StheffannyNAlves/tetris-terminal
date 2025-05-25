@@ -19,6 +19,24 @@ Esse Tetris foi desenvolvido com foco em:
 
     Totalmente jogável via interface textual (modo terminal) usando a biblioteca curses
 
+📚 Contexto Acadêmico
+
+Este projeto foi desenvolvido como parte de um desafio da disciplina MI-Algoritmos na UEFS, seguindo a metodologia PBL (Problem-Based Learning).
+
+    ⚠️ Restrições acadêmicas intencionais:
+
+        Proibido o uso de classes, import entre arquivos ou modularização.
+
+        Código centralizado em um único arquivo .py.
+
+        Entregue sob forte limitação de tempo e escopo.
+
+Essas limitações foram impostas para desenvolver lógica sob pressão e com recursos mínimos, simulando restrições reais de sistemas embarcados ou código legado.
+
+A versão atual está sendo refatorada com total liberdade arquitetural, priorizando boas práticas de engenharia de software.
+
+
+
 🚀 Funcionalidades
 
 - ✅ 7 peças clássicas do Tetris
