@@ -1,186 +1,142 @@
+
 # 🧱 TETRIS TERMINAL — Powered by Python + Curses
-Jogo Tetris em Python com interface em terminal usando Curses e NumPy. Em refatoração para PyGame.
-🎮 Tetris Terminal (versão curses) – Stheffanny N. Alves
 
-> 🚧 **Este projeto está em processo de refatoração para se tornar um app modular com interface gráfica em `pygame`.**  
-> O código atual representa a **versão funcional em terminal**, feita como projeto acadêmico na disciplina MI-Algoritmos, por meio da Metodologia PBL(Problem-Based Learning ou Aprendizagem Baseada em Problemas).
+Um clone funcional do clássico Tetris rodando inteiramente no terminal, desenvolvido em Python com `curses` e `NumPy`.
 
+> **Status do projeto:** concluído / arquivado.  
+> Este repositório preserva a versão original do jogo. Ele foi construído intencionalmente como um **monolito procedural** para atender a restrições acadêmicas específicas, demonstrando que é possível implementar mecânicas relativamente complexas , como o **Super Rotation System (SRS)** , operando apenas em modo texto e sem uso de orientação a objetos.
 
+---
 
-🧩 Sobre o Projeto
+## 🧩 Sobre o projeto
 
-Esse Tetris foi desenvolvido com foco em:
+Este Tetris foi desenvolvido com foco em fluidez, responsividade e fidelidade mecânica dentro das limitações de um terminal. O jogo inclui:
 
-    Jogabilidade fluida com Super Rotation System (SRS) e wall kicks
+- **Super Rotation System (SRS) e wall kicks** para uma rotação mais próxima dos jogos modernos.
+- **Peça especial: bomba 💣**, capaz de explodir áreas `3x3` do tabuleiro e adicionar uma camada estratégica extra.
+- **Sistema de combos e progressão**, com aumento dinâmico de velocidade e pontuação.
+- **Interface textual**, totalmente renderizada no terminal via `curses`.
 
-    Peça bomba 💣 que explode áreas inteiras do tabuleiro
+---
 
-    Sistema de combos, níveis dinâmicos e pontuação estratégica
+## 📚 Contexto acadêmico e restrições de engenharia
 
-    Totalmente jogável via interface textual (modo terminal) usando a biblioteca curses
+Este projeto surgiu como parte da disciplina de **MI-Algoritmos** na **Universidade Estadual de Feira de Santana (UEFS)**, dentro da metodologia **PBL (Problem-Based Learning)**.
 
-📚 Contexto Acadêmico
+Durante o desenvolvimento, foram aplicadas restrições intencionais para priorizar raciocínio lógico, controle de fluxo e resolução direta de problemas em um ambiente de implementação limitado:
 
-Este projeto foi desenvolvido como parte de um desafio da disciplina MI-Algoritmos na UEFS, seguindo a metodologia PBL (Problem-Based Learning).
+- 🚫 **Proibido o uso de orientação a objetos (classes).**
+- 🚫 **Proibida a modularização em múltiplos arquivos próprios.**
+- ⚠️ **Código centralizado em um único arquivo `.py`.**
+- ⏱️ **Prazo reduzido de desenvolvimento.**
 
-    ⚠️ Restrições acadêmicas intencionais:
+Essas restrições não foram limitações acidentais do projeto, mas parte do desafio de engenharia proposto.
 
-        Proibido o uso de classes, import entre arquivos ou modularização.
+---
 
-        Código centralizado em um único arquivo .py.
+## 🚀 Funcionalidades
 
-        Entregue sob forte limitação de tempo e escopo.
-
-Essas limitações foram impostas para desenvolver lógica sob pressão e com recursos mínimos, simulando restrições reais de sistemas embarcados ou código legado.
-
-A versão atual está sendo refatorada com total liberdade arquitetural, priorizando boas práticas de engenharia de software.
-
-
-
-🚀 Funcionalidades
-
-- ✅ 7 peças clássicas do Tetris
-- ✅ Peça especial Bomba com explosão em área
+- ✅ 7 peças clássicas do Tetris + 1 peça especial (bomba)
 - ✅ Detecção de colisão e remoção de linhas
 - ✅ Sistema de combo com tempo limite
-- ✅ Progressão de dificuldade com aumento de velocidade
-- ✅ Menu inicial, opções de dificuldade e mapeamento de controles
-- ✅ Pontuação por tipo de peça, combo e nível
-- ✅ Configuração por menu (WASD ou Setas)
-
-
-
+- ✅ Progressão de dificuldade com aumento de velocidade por nível
+- ✅ Menu inicial com seleção de dificuldade
+- ✅ Mapeamento de controles (WASD ou setas)
+- ✅ Sistema de pontuação por peça, combo e nível
 
 ---
 
-🧠 Tecnologias utilizadas
+## 🧠 Tecnologias utilizadas
 
-- Python 3.10+  
-- NumPy  
-- Curses (modo texto)  
-- [Planejado] PyGame (GUI futura)  
-
----
-🧪 Requisitos
-
-- Python 3.10+
-- Sistema compatível com `curses`
-  - ✅ Linux/macOS: roda nativamente
-  - ⚠️ Windows: usar [Windows Terminal](https://aka.ms/terminal) + [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
-
-
-🕹️ Controles
-
-| Ação             | Tecla WASD | Tecla Setas |
-| ---------------- | ---------- | ----------- |
-| Mover Esquerda   | `A`        | `←`         |
-| Mover Direita    | `D`        | `→`         |
-| Mover Para Baixo | `S`        | `↓`         |
-| Rotacionar Peça  | `W`        | `↑`         |
-| Pausar/Reiniciar | `P`        | `P`         |
-| Sair             | `Q`        | `Q`         |
-
+- **Python 3.10+**
+- **NumPy** — manipulação da matriz do tabuleiro
+- **Curses** — renderização da interface em modo texto
 
 ---
 
-💣 Peça Bomba
+## 🧪 Requisitos e execução
 
-- Representada como peça `B`  
-- Ao colidir, explode uma área 3x3 ao redor  
-- Remove peças fixas e concede pontos extras  
-- Adiciona estratégia ao gameplay  
+### Requisitos
 
----
+- **Python 3.10** ou superior
+- Sistema operacional compatível com `curses`
 
-🚀 Como rodar
+Compatibilidade:
 
-1. Clone o repositório:  
-   ```bash
-   git clone https://github.com/seu-usuario/tetris-terminal.git
-   cd tetris-terminal
-``
-
-2. (Recomendado) Crie um ambiente virtual:
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. Instale as dependências:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Rode o jogo:
-
-   ```bash
-   python3 tetris.py
-   ```
-
-⚠️ No Ubuntu, certifique-se que o terminal suporta `curses`. O jogo roda diretamente no terminal.
+- ✅ **Linux/macOS:** execução nativa
+- ⚠️ **Windows:** recomendado usar **WSL** com **Windows Terminal**
 
 ---
 
- 🛠️ Em desenvolvimento
+## ▶️ Como rodar
 
-* [x] Versão funcional em curses
-* [ ] Refatoração completa em arquitetura modular
-* [ ] Transição para interface gráfica usando PyGame
-* [ ] Exportação para executável standalone
-* [ ] Versão Web com PyScript (em estudo)
+1. Clone o repositório:
 
----
+```bash
+git clone https://github.com/seu-usuario/tetris-terminal.git
+cd tetris-terminal
+```
 
-🧠 Bug visível: Após fixar as peças, alguns blocos exibiam “glitch” de cor no terminal.  
-🔍 Causa: `curses.color_pair()` recebia valores que já haviam sido apagados (0 ou inválidos).  
-🛠️ Status: Corrigido na versão modular em desenvolvimento.
+2.Crie e ative um ambiente virtual:
 
----
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-📸 GIF
+3.Instale as dependências:
 
-![Tetris Gameplay](./tetris.gif)
+```bash
+pip install -r requirements.txt
+```
 
+4.Execute o jogo:
 
----
-
-🔮 Futuras Expansões
-
-- Adicionar efeitos sonoros (playsound ou pygame.mixer)
-
-- Porta gráfica com pygame
-
-- Ranking local/salvamento de pontuação
-
-- Modo multiplayer local
-
-- Versão para web com WebAssembly ou Flask
+```bash
+python3 tetris.py
+```
 
 ---
 
- 🧑‍💻 Autora
+## 🕹️ Controles
+
+| Ação               | WASD | Setas |
+| ------------------ | ---- | ----- |
+| Mover à esquerda   | `A`  | `←`   |
+| Mover à direita    | `D`  | `→`   |
+| Mover para baixo   | `S`  | `↓`   |
+| Rotacionar peça    | `W`  | `↑`   |
+| Pausar / reiniciar | `P`  | `P`   |
+| Sair               | `Q`  | `Q`   |
+
+---
+
+## 🐞 Bugs conhecidos
+
+***Glitch visual em peças fixadas:** em execuções prolongadas, alguns blocos podem apresentar inconsistências visuais de cor no terminal.
+
+**Causa técnica:** em certos ciclos de renderização procedural, `curses.color_pair()` pode receber valores que já foram sobrescritos no fluxo atual de atualização da tela.
+
+Esse comportamento foi mantido nesta versão arquivada por fazer parte do estado original do projeto.
+
+---
+
+## 📸 Gameplay
+
+![Validação da comunicação serial reativa](./tetris.gif)
+
+---
+
+## 🧑‍💻 Autora
 
 **Stheffanny N. Alves**
-Stheffanny Nascimento Alves
-   🎓 Estudante de Engenharia de Computação — UEFS
-   🔐 Foco em Cibersegurança, Programação e Engenharia de Software
-  🖤 Apaixonada por tecnologia e desenvolvimento de jogos
-  📫 stheffannyalvesnascimento@gmail.com
-  🔗 GitHub
+🎓 Estudante de Engenharia de Computação — UEFS
+🔐 Interesse em Cibersegurança e Engenharia de Software
+📫 [stheffannyalvesnascimento@gmail.com](mailto:stheffannyalvesnascimento@gmail.com)
 
 ---
 
-📄 Licença
+## 📄 Licença
 
-Projeto sob a licença MIT.
-
-    Sinta-se livre pra usar, modificar e compartilhar😎💣
-
----
-
-⚠️ Aviso Final
-
-Esse repositório representa **uma fase inicial** de um projeto maior. Se você quer ver a evolução para interface gráfica e modularização avançada, **acompanhe a branch `dev`** ou aguarde novas atualizações.
-
-
+Este projeto está sob a licença **MIT**.
+Sinta-se livre para estudar, modificar, refatorar ou reutilizar o código.
