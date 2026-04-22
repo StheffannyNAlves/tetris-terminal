@@ -131,7 +131,6 @@ Esse comportamento foi mantido nesta versão arquivada por fazer parte do estado
 
 **Stheffanny N. Alves**
 🎓 Estudante de Engenharia de Computação — UEFS
-🔐 Interesse em Cibersegurança e Engenharia de Software
 📫 [stheffannyalvesnascimento@gmail.com](mailto:stheffannyalvesnascimento@gmail.com)
 
 ---
