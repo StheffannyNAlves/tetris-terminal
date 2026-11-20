@@ -4,7 +4,7 @@
 Um clone funcional do clássico Tetris rodando inteiramente no terminal, desenvolvido em Python com `curses` e `NumPy`.
 
 > **Status do projeto:** concluído / arquivado.  
-> Este repositório preserva a versão original do jogo. Ele foi construído intencionalmente como um **monolito procedural** para atender a restrições acadêmicas específicas, demonstrando que é possível implementar mecânicas relativamente complexas , como o **Super Rotation System (SRS)** , operando apenas em modo texto e sem uso de orientação a objetos.
+> Este repositório preserva a versão original do jogo. Ele foi construído intencionalmente como um **monolito procedural** para atender a restrições acadêmicas específicas, demonstrando que é possível implementar mecânicas relativamente complexas, como o **Super Rotation System (SRS)**, operando apenas em modo texto e sem uso de orientação a objetos.
 
 ---
 
@@ -73,24 +73,24 @@ Compatibilidade:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/tetris-terminal.git
+git clone https://github.com/StheffannyNAlves/tetris-terminal.git
 cd tetris-terminal
 ```
 
-2.Crie e ative um ambiente virtual:
+2. Crie e ative um ambiente virtual:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-3.Instale as dependências:
+3. Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4.Execute o jogo:
+4. Execute o jogo:
 
 ```bash
 python3 tetris.py
@@ -113,7 +113,7 @@ python3 tetris.py
 
 ## 🐞 Bugs conhecidos
 
-***Glitch visual em peças fixadas:** em execuções prolongadas, alguns blocos podem apresentar inconsistências visuais de cor no terminal.
+**Falha visual em peças fixadas:** em execuções prolongadas, alguns blocos podem apresentar inconsistências visuais de cor no terminal.
 
 **Causa técnica:** em certos ciclos de renderização procedural, `curses.color_pair()` pode receber valores que já foram sobrescritos no fluxo atual de atualização da tela.
 
@@ -121,9 +121,9 @@ Esse comportamento foi mantido nesta versão arquivada por fazer parte do estado
 
 ---
 
-## 📸 Gameplay
+## 📸 Demonstração
 
-![Validação da comunicação serial reativa](./tetris.gif)
+![Demonstração do jogo Tetris no terminal](./tetris.gif)
 
 ---
 
