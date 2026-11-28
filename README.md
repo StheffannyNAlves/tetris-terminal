@@ -93,7 +93,7 @@ pip install -r requirements.txt
 4. Execute o jogo:
 
 ```bash
-python3 tetris.py
+python3 src/tetris.py
 ```
 
 ---
